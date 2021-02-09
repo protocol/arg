@@ -9,12 +9,15 @@ const STYLES_BODY = css`
   max-width: 888px;
   width: 100%;
   padding: 128px 24px 256px 24px;
+
   h1 {
     font-weight: 400;
     font-size: 64px;
     line-height: 64px;
     margin-bottom: 64px;
     color: #000000;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
   }
 
   h2 {
@@ -23,6 +26,8 @@ const STYLES_BODY = css`
     line-height: 32px;
     margin-top: 64px;
     color: #161616;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
   }
 
   p {
@@ -30,17 +35,23 @@ const STYLES_BODY = css`
     line-height: 32px;
     margin-top: 32px;
     color: #262626;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
   }
 
   .item {
     margin-top: 32px;
     font-size: 24px;
     line-height: 32px;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
   }
 
   .member {
     font-size: 24px;
     line-height: 32px;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
   }
 `;
 
@@ -63,12 +74,12 @@ const grant = [
 const projects = [
   {
     name: "Slate",
-    services: ["Render", "Textile", "DaemonLand"],
+    services: ["Render", "Textile", "Infinite Scroll"],
     url: "https://github.com/filecoin-project/slate",
   },
   {
     name: "Slate iOS",
-    services: ["Textile", "DaemonLand"],
+    services: ["Textile", "Infinite Scroll"],
     url: "https://github.com/slate-engineering/slate-ios",
   },
   {
@@ -129,26 +140,28 @@ export default class IndexPage extends React.Component {
           <p>
             At Protocol Labs, we build protocols, tools, and services that improve the Internet
             beyond TCP/IP. The Application Research Group (ARG) bolsters the mission by focusing on
-            shipping tools that humans love to use on the Internet.
+            shipping tools that people love to use on the Internet.
           </p>
 
           <p>
-            All of our work has the potential to serve a lot of people. Over four billion humans are
+            All of our work has the potential to serve a lot of people. Over four billion people are
             active internet users as of 2020, and that value is over fifty five percent of the
             global population. Our civilization reached this point by creating an Internet with no
             single centralized governance by either technological implementation or government
-            policy. We believe that in order to continue a open global Internet, we must ship useful
-            software and utelize protocols that preserve what everyone cherishes.
+            policy. We believe that in order to continue an open global Internet, we must ship more
+            well designed software and utilize protocols that preserve what everyone cherishes.
           </p>
 
           <p>
             Our stance towards Web3 Applications is simple. Internet software today can be better.
-            Humans should not provide sensitive data to Internet services unless it is absolutely
-            necessary. If a human uses software they do become transformed into a product against
-            their will. Client server architecture has gotten us far, but there does not need to be
-            a single point of failure for services. Humans deserve transparency from their software,
-            just like they deserve to know what chemicals are in their food, or which pollutants are
-            in the water they drink.
+            We believe in open source software, and we believe you should have much more autonomy
+            over your clients. People should not provide sensitive data to Internet services unless
+            it is absolutely necessary. If a person uses software they do become transformed into a
+            product against their will. Client-⇶-server architecture has gotten us far, but there no
+            longer needs to be a single point of failure for services, and the new clients need to
+            be far more robust to handle the world of augmented and virtual reality. People deserve
+            transparency from their software, just like they deserve to know what chemicals are in
+            their food, or which pollutants are in the water they drink.
           </p>
 
           <p>
@@ -159,11 +172,11 @@ export default class IndexPage extends React.Component {
           </p>
 
           <p>
-            Our partners Textile, Fleek, and Ceramic are leading the way in more ways than we can
-            list. They make what our group does possible. Our first product, Slate proves that we
-            can incorporate many partners and their services into a single product. Over the next
-            decade we will continue to prove our worth and demonstrate that there is space for
-            everyone to build together. We can not get to 4 billion users alone.
+            Our partners Textile, Fleek, and Infinite Scroll are leading the way in more ways than
+            we can list. They make what our group does possible. Our first product, Slate proves
+            that we can incorporate many partners and their services into a single product. Over the
+            next decade we will continue to prove our worth and demonstrate that there is space for
+            everyone to build together.
           </p>
 
           <p>Thank you for the opportunity to serve. We will not let you down!</p>
