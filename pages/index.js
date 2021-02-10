@@ -57,7 +57,7 @@ const STYLES_BODY = css`
 
 const team = [
   { name: "Jeromy Johnson", title: "Principal" },
-  { name: "Jimmy Lee" },
+  { name: "Jimmy Lee", url: "https://reading.supply/@jim" },
   { name: "Chris Waring" },
   { name: "Martina Long" },
   { name: "Haris Butt" },
@@ -74,9 +74,10 @@ const grant = [
 const projects = [
   {
     name: "Slate",
-    services: ["Render", "Textile", "Infinite Scroll"],
+    services: ["Render", "Textile", "Infinite Scroll", "Sentinel"],
     url: "https://github.com/filecoin-project/slate",
   },
+  /*
   {
     name: "Slate iOS",
     services: ["Textile", "Infinite Scroll"],
@@ -100,6 +101,7 @@ const projects = [
     services: ["Textile", "Render"],
     url: "https://github.com/slate-engineering/shovel",
   },
+  */
   { name: "Filecoin Wallet", services: ["ChainLove"] },
 ];
 
@@ -208,7 +210,14 @@ export default class IndexPage extends React.Component {
           {team.map((t) => {
             return (
               <div className="member">
-                {t.name} {t.title ? <span style={{ color: "#888" }}>◥ {t.title}</span> : ""}
+                {t.url ? (
+                  <a href={t.url} target="_blank">
+                    {t.name}
+                  </a>
+                ) : (
+                  t.name
+                )}{" "}
+                {t.title ? <span style={{ color: "#888" }}>◥ {t.title}</span> : ""}
               </div>
             );
           })}
