@@ -5,6 +5,12 @@ import Head from "next/head";
 
 import { css } from "@emotion/react";
 
+const getFullYear = () => {
+  var d = new Date();
+  var n = d.getFullYear();
+  return n;
+};
+
 const STYLES_BODY = css`
   max-width: 888px;
   width: 100%;
@@ -59,55 +65,41 @@ const team = [
   { name: "Jeromy Johnson", title: "Principal" },
   { name: "Jimmy Lee", url: "https://reading.supply/@jim" },
   { name: "Chris Waring" },
-  { name: "Martina Long" },
-  { name: "Haris Butt" },
-  { name: "Tara Lin" },
 ];
 
 const friends = [
   { name: "Kelsey Whelan", title: "@Figma" },
   { name: "Achal Srinivasan", title: "@DYDX" },
-];
-
-const grant = [
-  { name: "Jason Leyser", title: "Lead" },
-  { name: "Daniel Akuoko" },
-  { name: "Amine Elouarti" },
-  { name: "Shariq Butt" },
+  { name: "Aaron Ng", url: "https://aaron.ng/" },
+  { name: "Behzod Sirjani", url: "https://behzod.com" },
 ];
 
 const projects = [
   {
-    name: "Slate",
-    services: ["Render", "Textile", "Infinite Scroll", "Sentinel"],
-    url: "https://github.com/filecoin-project/slate",
-  },
-  /*
-  {
-    name: "Slate iOS",
-    services: ["Textile", "Infinite Scroll"],
-    url: "https://github.com/slate-engineering/slate-ios",
+    name: "Origin — official ARG static site template",
+    url: "https://github.com/application-research/origin",
+    services: ["Fleek"],
   },
   {
-    name: "Slate Design System & NPM Module",
-    services: [],
-    url: "https://slate.host/_/system",
+    name: "File.app — Filecoin storage analytics",
+    url: "https://file.app",
+    services: ["Textile", "FilRep", "Filecoin", "IEXCLoud"],
   },
   {
-    name: "Slate Chrome Extension",
-    url: "https://github.com/jasonleyser/slate-for-chrome",
+    name: "Estuary — Retrieval Gateway",
+    url: "https://github.com/filecoin-project/community/discussions/105",
     services: [],
   },
-  { name: "Slate Sentinel", services: ["Render", "Sentinel"], url: "https://sentinel.slate.host" },
-  { name: "Lens", services: ["Render"], url: "https://github.com/slate-engineering/lens" },
-  { name: "Fiji", services: ["Render"], url: "https://github.com/slate-engineering/fiji" },
   {
-    name: "Shovel",
-    services: ["Textile", "Render"],
-    url: "https://github.com/slate-engineering/shovel",
+    name: "Sovereign — Filecoin Wallet",
+    url: "https://github.com/filecoin-project/community/discussions/62",
+    services: [],
   },
-  */
-  { name: "Filecoin Wallet", services: ["Experiments - Not Production Safe"] },
+  {
+    name: "next-daemon-bucket",
+    url: "https://github.com/filecoin-project/community/discussions/118",
+    services: ["Textile"],
+  },
 ];
 
 export default class IndexPage extends React.Component {
@@ -166,7 +158,7 @@ export default class IndexPage extends React.Component {
             should have much more autonomy over your clients. People should not provide sensitive
             data to Internet services unless it is absolutely necessary, and then only if they
             choose to. If a person uses software they can become transformed into a product against
-            their will. Client-⇶-server architecture has gotten us far, but there no longer needs to
+            their will. Client⇄server architecture has gotten us far, but there no longer needs to
             be a single point of failure for services, and the new clients need to be far more
             robust to handle the world of augmented and virtual reality. People deserve transparency
             from their software, just like they deserve to know what chemicals are in their food, or
@@ -184,9 +176,14 @@ export default class IndexPage extends React.Component {
           <p>
             Groups like Textile, Fleek, and Infinite Scroll (to name a few) are inspiring and
             leading the way in more ways than we can list. Their services make what the Applications
-            Research Group does possible. Our first product, https://slate.host, proves that we can
-            incorporate many services into a single compelling product. We will attempt to prove our
-            longterm worth and demonstrate that there is space for everyone to build together.
+            Research Group does possible. Our first product in 2020,{" "}
+            <a href="https://slate.host" target="_blank">
+              https://slate.host
+            </a>
+            , proves that we can incorporate many services into a single compelling end-user
+            product. From there we were able to kick it off to stewards that are fully capable of
+            maintaining and owning the project. In 2021 we hope to build many new projects that help
+            expand the ecosystem and opportunities to learn together.
           </p>
 
           <p>Thank you for the opportunity to serve!</p>
@@ -207,7 +204,7 @@ export default class IndexPage extends React.Component {
                     ))}
                   </div>
                 ) : null}
-                <a href={p.url}>
+                <a href={p.url} target="_blank">
                   <span style={{ opacity: 0 }}>➟ </span>
                   {p.url}
                 </a>
@@ -249,21 +246,14 @@ export default class IndexPage extends React.Component {
             );
           })}
 
-          <h2>Grant Program</h2>
-
+          <h2>𓃵 Collaborate</h2>
           <p>
-            The Applications Research Group provides grants to young builders around the world who
-            want to help make the Internet a better place. At the moment the program is invite only
-            and in trial.
+            Are you interested in collaborating? Jump into any of the project links and take a look
+            at what we are working on and write to us using Github issues. We love experimenting
+            with new technologies.
           </p>
-          <br />
-          {grant.map((t) => {
-            return (
-              <div className="member">
-                {t.name} {t.title ? <span style={{ color: "#888" }}>◥ {t.title}</span> : ""}
-              </div>
-            );
-          })}
+
+          <p>© Application Research Group 2020-{getFullYear()}</p>
         </div>
       </React.Fragment>
     );
