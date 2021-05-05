@@ -76,6 +76,11 @@ const friends = [
 
 const projects = [
   {
+    name: "Estuary — Store and retrieve data",
+    url: "https://github.com/filecoin-project/community/discussions/105",
+    services: [],
+  },
+  {
     name: "Origin — official ARG static site template",
     url: "https://github.com/application-research/origin",
     services: ["Fleek"],
@@ -86,17 +91,12 @@ const projects = [
     services: ["Textile", "FilRep", "Filecoin", "IEXCLoud"],
   },
   {
-    name: "Estuary — Retrieval Gateway",
-    url: "https://github.com/filecoin-project/community/discussions/105",
-    services: [],
-  },
-  {
     name: "Sovereign — Filecoin Wallet",
     url: "https://github.com/filecoin-project/community/discussions/62",
     services: [],
   },
   {
-    name: "next-daemon-bucket",
+    name: "next-bucket",
     url: "https://github.com/filecoin-project/community/discussions/118",
     services: ["Textile"],
   },
