@@ -77,7 +77,7 @@ const friends = [
 const projects = [
   {
     name: "Estuary — Store and retrieve data",
-    url: "https://github.com/filecoin-project/community/discussions/105",
+    url: "https://estuary.tech",
     services: [],
   },
   {
