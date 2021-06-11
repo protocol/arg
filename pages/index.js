@@ -166,35 +166,49 @@ export default class IndexPage extends React.Component {
           </p>
 
           <p>
-            The Applications Research Group's stance towards Web3 Applications
-            is simple. Internet software today can be better. We believe in open
-            source software, and we believe you should have much more autonomy
-            over your clients. People should not provide sensitive data to
-            Internet services unless it is absolutely necessary, and then only
-            if they choose to. If a person uses software they can become
-            transformed into a product against their will. Client⇄server
-            architecture has gotten us far, but there no longer needs to be a
-            single point of failure for services, and the new clients need to be
-            far more robust to handle the world of augmented and virtual
-            reality. People deserve transparency from their software, just like
-            they deserve to know what chemicals are in their food, or which
-            pollutants are in the water they drink.
-          </p>
-
-          <p>
-            Our group gets to use libraries and modules from Protocol Labs,
-            which have honored the tradition of searching for optimal Web3
+            Our group gets to use libraries and modules from{" "}
+            <a href="https://protocol.ai" target="_blank">
+              Protocol Labs
+            </a>
+            , which have honored the tradition of searching for optimal Web3
             infrastructure. We are excited for the opportunity to continue to
-            battle test Filecoin, IPFS, LIBP2P, IPLD, and other contributions by
-            the many forward thinking engineers and software designers who work
-            here. Quality technology deserves an audience.
+            battle test{" "}
+            <a href="https://filecoin.io" target="_blank">
+              Filecoin
+            </a>
+            ,{" "}
+            <a href="https://ipfs.io" target="_blank">
+              IPFS
+            </a>
+            ,{" "}
+            <a href="https://libp2p.io/" target="_blank">
+              LIBP2P
+            </a>
+            ,{" "}
+            <a href="https://ipld.io/" target="_blank">
+              IPLD
+            </a>
+            , and other contributions by the many forward thinking engineers and
+            software designers who work here. Quality technology deserves an
+            audience.
           </p>
 
           <p>
-            Groups like Textile, Fleek, and Infinite Scroll (to name a few) are
-            inspiring and leading the way in more ways than we can list. Their
-            services make what the Applications Research Group does possible.
-            Our first product in 2020,{" "}
+            Groups like{" "}
+            <a href="https://textile.io" target="_blank">
+              Textile
+            </a>
+            ,{" "}
+            <a href="https://fleek.co/" target="_blank">
+              Fleek
+            </a>
+            , and{" "}
+            <a href="https://infinitescroll.org/" target="_blank">
+              Infinite Scroll
+            </a>{" "}
+            (to name a few) are inspiring and leading the way in more ways than
+            we can list. Their services make what the Applications Research
+            Group does possible. Our first product in 2020,{" "}
             <a href="https://slate.host" target="_blank">
               https://slate.host
             </a>
