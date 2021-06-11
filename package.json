@@ -2,7 +2,7 @@
   "name": "arg",
   "version": "0.0.1",
   "engines": {
-    "node": "10.x"
+    "node": "16.x"
   },
   "scripts": {
     "dev": "node .",
@@ -11,17 +11,17 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.12.9",
-    "@babel/preset-env": "^7.12.7",
-    "@babel/register": "^7.12.1",
-    "@emotion/babel-preset-css-prop": "11.0.0",
-    "@emotion/react": "11.1.1",
-    "babel-plugin-module-resolver": "^4.0.0",
+    "@babel/core": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "@babel/register": "^7.14.5",
+    "@emotion/babel-preset-css-prop": "11.2.0",
+    "@emotion/react": "11.4.0",
+    "babel-plugin-module-resolver": "^4.1.0",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    "next": "^10.0.3",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "next": "^10.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }

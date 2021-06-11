@@ -70,6 +70,7 @@ const team = [
 const friends = [
   { name: "Kelsey Whelan", title: "@Figma" },
   { name: "Achal Srinivasan", title: "@DYDX" },
+  { name: "Jay Graber", title: "@Bluesky" },
   { name: "Aaron Ng", url: "https://aaron.ng/" },
   { name: "Behzod Sirjani", url: "https://behzod.com" },
 ];
@@ -127,8 +128,18 @@ export default class IndexPage extends React.Component {
           <meta property="twitter:description" content={description} />
           <meta property="twitter:image" content="/static/social.png" />
 
-          <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/static/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/static/favicon-16x16.png"
+          />
 
           <link rel="shortcut icon" href="/static/favicon.ico" />
         </Head>
@@ -137,53 +148,68 @@ export default class IndexPage extends React.Component {
           <p>Applications Research Group</p>
 
           <p>
-            People at Protocol Labs build protocols, tools, and services to radically improve the
-            Internet. The Applications Research Group (ARG) is an auxiliary team that aims to
-            bolsters the mission by focusing on shipping tools that people love to use on the
-            Internet.
+            People at Protocol Labs build protocols, tools, and services to
+            radically improve the Internet. The Applications Research Group
+            (ARG) is an auxiliary team that aims to bolsters the mission by
+            focusing on shipping tools that people love to use on the Internet.
           </p>
 
           <p>
-            The ARG's work has the potential to serve a lot of people. Over four billion people are
-            active internet users as of 2020, and that value is over fifty five percent of the
-            global population. Our civilization reached this point by creating an Internet with no
-            single centralized governance by either technological implementation or government
-            policy. We believe that in order to continue an open global Internet, we must ship more
-            well designed software and utilize protocols that preserve what everyone cherishes.
+            The ARG's work has the potential to serve a lot of people. Over four
+            billion people are active internet users as of 2020, and that value
+            is over fifty five percent of the global population. Our
+            civilization reached this point by creating an Internet with no
+            single centralized governance by either technological implementation
+            or government policy. We believe that in order to continue an open
+            global Internet, we must ship more well designed software and
+            utilize protocols that preserve what everyone cherishes.
           </p>
 
           <p>
-            The Applications Research Group's stance towards Web3 Applications is simple. Internet
-            software today can be better. We believe in open source software, and we believe you
-            should have much more autonomy over your clients. People should not provide sensitive
-            data to Internet services unless it is absolutely necessary, and then only if they
-            choose to. If a person uses software they can become transformed into a product against
-            their will. Client⇄server architecture has gotten us far, but there no longer needs to
-            be a single point of failure for services, and the new clients need to be far more
-            robust to handle the world of augmented and virtual reality. People deserve transparency
-            from their software, just like they deserve to know what chemicals are in their food, or
-            which pollutants are in the water they drink.
+            The Applications Research Group's stance towards Web3 Applications
+            is simple. Internet software today can be better. We believe in open
+            source software, and we believe you should have much more autonomy
+            over your clients. People should not provide sensitive data to
+            Internet services unless it is absolutely necessary, and then only
+            if they choose to. If a person uses software they can become
+            transformed into a product against their will. Client⇄server
+            architecture has gotten us far, but there no longer needs to be a
+            single point of failure for services, and the new clients need to be
+            far more robust to handle the world of augmented and virtual
+            reality. People deserve transparency from their software, just like
+            they deserve to know what chemicals are in their food, or which
+            pollutants are in the water they drink.
           </p>
 
           <p>
-            Our group gets to use libraries and modules from Protocol Labs, which have honored the
-            tradition of searching for optimal Web3 infrastructure. We are excited for the
-            opportunity to continue to battle test Filecoin, IPFS, LIBP2P, IPLD, and other
-            contributions by the many forward thinking engineers and software designers who work
+            Our group gets to use libraries and modules from Protocol Labs,
+            which have honored the tradition of searching for optimal Web3
+            infrastructure. We are excited for the opportunity to continue to
+            battle test Filecoin, IPFS, LIBP2P, IPLD, and other contributions by
+            the many forward thinking engineers and software designers who work
             here. Quality technology deserves an audience.
           </p>
 
           <p>
-            Groups like Textile, Fleek, and Infinite Scroll (to name a few) are inspiring and
-            leading the way in more ways than we can list. Their services make what the Applications
-            Research Group does possible. Our first product in 2020,{" "}
+            Groups like Textile, Fleek, and Infinite Scroll (to name a few) are
+            inspiring and leading the way in more ways than we can list. Their
+            services make what the Applications Research Group does possible.
+            Our first product in 2020,{" "}
             <a href="https://slate.host" target="_blank">
               https://slate.host
             </a>
-            , proves that we can incorporate many services into a single compelling end-user
-            product. From there we were able to kick it off to stewards that are fully capable of
-            maintaining and owning the project. In 2021 we hope to build many new projects that help
-            expand the ecosystem and opportunities to learn together.
+            , proves that we can incorporate many services into a single
+            compelling end-user product. Since March 2021, collaborators were
+            able to fully take over and maintain the project.{" "}
+          </p>
+          <p>
+            On June 1st 2021, ARG released a developer preview of{" "}
+            <a href="https://estuary.tech" target="_blank">
+              https://estuary.tech
+            </a>{" "}
+            which is a living example of the full end-to-end Filecoin
+            experience. Today, we hope to continue to build many new projects
+            that help expand the ecosystem and opportunities to learn together.
           </p>
 
           <p>Thank you for the opportunity to serve!</p>
@@ -224,7 +250,11 @@ export default class IndexPage extends React.Component {
                 ) : (
                   t.name
                 )}{" "}
-                {t.title ? <span style={{ color: "#888" }}>◥ {t.title}</span> : ""}
+                {t.title ? (
+                  <span style={{ color: "#888" }}>◥ {t.title}</span>
+                ) : (
+                  ""
+                )}
               </div>
             );
           })}
@@ -241,16 +271,20 @@ export default class IndexPage extends React.Component {
                 ) : (
                   t.name
                 )}{" "}
-                {t.title ? <span style={{ color: "#888" }}>◥ {t.title}</span> : ""}
+                {t.title ? (
+                  <span style={{ color: "#888" }}>◥ {t.title}</span>
+                ) : (
+                  ""
+                )}
               </div>
             );
           })}
 
           <h2>𓃵 Collaborate</h2>
           <p>
-            Are you interested in collaborating? Jump into any of the project links and take a look
-            at what we are working on and write to us using Github issues. We love experimenting
-            with new technologies.
+            Are you interested in collaborating? Jump into any of the project
+            links and take a look at what we are working on and write to us
+            using Github issues. We love experimenting with new technologies.
           </p>
 
           <p>© Application Research Group 2020-{getFullYear()}</p>
