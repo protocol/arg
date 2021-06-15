@@ -61,19 +61,7 @@ const STYLES_BODY = css`
   }
 `;
 
-const team = [
-  { name: 'Jeromy Johnson', title: 'Principal' },
-  { name: 'Jimmy Lee', url: 'https://reading.supply/@jim' },
-  { name: 'Chris Waring' },
-];
-
-const friends = [
-  { name: 'Kelsey Whelan', title: '@Figma' },
-  { name: 'Achal Srinivasan', title: '@DYDX' },
-  { name: 'Jay Graber', title: '@Bluesky' },
-  { name: 'Aaron Ng', url: 'https://aaron.ng/' },
-  { name: 'Behzod Sirjani', url: 'https://behzod.com' },
-];
+const team = [{ name: 'Jeromy Johnson', title: 'Principal' }, { name: 'Jimmy Lee', url: 'https://reading.supply/@jim' }, { name: 'Chris Waring' }];
 
 const projects = [
   {
@@ -82,24 +70,24 @@ const projects = [
     services: [],
   },
   {
-    name: 'Origin — official ARG static site template',
-    url: 'https://github.com/application-research/origin',
-    services: ['Fleek'],
-  },
-  {
     name: 'File.app — Filecoin storage analytics',
     url: 'https://file.app',
     services: ['Textile', 'FilRep', 'Filecoin', 'IEXCLoud'],
   },
   {
+    name: 'next-bucket',
+    url: 'https://github.com/application-research/next-bucket',
+    services: ['Textile'],
+  },
+  {
+    name: 'Origin — official ARG static site template',
+    url: 'https://github.com/application-research/origin',
+    services: ['Fleek'],
+  },
+  {
     name: 'Sovereign — Filecoin Wallet',
     url: 'https://github.com/filecoin-project/community/discussions/62',
     services: [],
-  },
-  {
-    name: 'next-bucket',
-    url: 'https://github.com/filecoin-project/community/discussions/118',
-    services: ['Textile'],
   },
 ];
 
@@ -120,13 +108,13 @@ export default class IndexPage extends React.Component {
           <meta property="og:url" content={url} />
           <meta property="og:title" content={title} />
           <meta property="og:description" content={description} />
-          <meta property="og:image" content="/static/social.png" />
+          <meta property="og:image" content="https://next-s3-public.s3.us-west-2.amazonaws.com/social/arg.protocol.ai.png" />
 
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content={url} />
           <meta property="twitter:title" content={title} />
           <meta property="twitter:description" content={description} />
-          <meta property="twitter:image" content="/static/social.png" />
+          <meta property="twitter:image" content="https://next-s3-public.s3.us-west-2.amazonaws.com/social/arg.protocol.ai.png" />
 
           <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
@@ -138,19 +126,18 @@ export default class IndexPage extends React.Component {
           <p>Applications Research Group</p>
 
           <p>
-            People at Protocol Labs build protocols, tools, and services to radically improve the
-            Internet. The Applications Research Group (ARG) is an auxiliary team that aims to
-            bolsters the mission by focusing on shipping tools that people love to use on the
-            Internet.
+            <a href="https://protocol.ai">Protocol Labs</a> build protocols, tools, and services to radically improve the Internet. The{' '}
+            <a href="https://github.com/application-research/" target="_blank">
+              Applications Research Group
+            </a>{' '}
+            (ARG) is a team that aims to bolsters the mission by focusing on shipping tools that provide daily utility on the Internet.
           </p>
 
           <p>
-            The ARG's work has the potential to serve a lot of people. Over four billion people are
-            active internet users as of 2020, and that value is over fifty five percent of the
-            global population. Our civilization reached this point by creating an Internet with no
-            single centralized governance by either technological implementation or government
-            policy. We believe that in order to continue an open global Internet, we must ship more
-            well designed software and utilize protocols that preserve what everyone cherishes.
+            The ARG's work has the potential to serve a lot of people. Over four billion people are active internet users as of 2020, and that value is over fifty five percent of
+            the global population. Our civilization reached this point by creating an Internet with no single centralized governance by either technological implementation or
+            government policy. We believe that in order to continue an open global Internet, we must ship more well designed software and utilize protocols that preserve what
+            everyone cherishes.
           </p>
 
           <p>
@@ -158,8 +145,7 @@ export default class IndexPage extends React.Component {
             <a href="https://protocol.ai" target="_blank">
               Protocol Labs
             </a>
-            , which have honored the tradition of searching for optimal Web3 infrastructure. We are
-            excited for the opportunity to continue to battle test{' '}
+            , which have honored the tradition of searching for optimal Web3 infrastructure. We are excited for the opportunity to continue to battle test{' '}
             <a href="https://filecoin.io" target="_blank">
               Filecoin
             </a>
@@ -175,41 +161,7 @@ export default class IndexPage extends React.Component {
             <a href="https://ipld.io/" target="_blank">
               IPLD
             </a>
-            , and other contributions by the many forward thinking engineers and software designers
-            who work here. Quality technology deserves an audience.
-          </p>
-
-          <p>
-            Groups like{' '}
-            <a href="https://textile.io" target="_blank">
-              Textile
-            </a>
-            ,{' '}
-            <a href="https://fleek.co/" target="_blank">
-              Fleek
-            </a>
-            , and{' '}
-            <a href="https://infinitescroll.org/" target="_blank">
-              Infinite Scroll
-            </a>{' '}
-            (to name a few) are inspiring and leading the way in more ways than we can list. Their
-            services make what the Applications Research Group does possible. Our first product in
-            2020,{' '}
-            <a href="https://slate.host" target="_blank">
-              https://slate.host
-            </a>
-            , proves that we can incorporate many services into a single compelling end-user
-            product. Since March 2021, collaborators were able to fully take over and maintain the
-            project.{' '}
-          </p>
-          <p>
-            On June 1st 2021, ARG released a developer preview of{' '}
-            <a href="https://estuary.tech" target="_blank">
-              https://estuary.tech
-            </a>{' '}
-            which is a living example of the full end-to-end Filecoin experience. Today, we hope to
-            continue to build many new projects that help expand the ecosystem and opportunities to
-            learn together.
+            , and other contributions by the many forward thinking engineers and software designers who work here. Quality technology deserves an audience.
           </p>
 
           <p>Thank you for the opportunity to serve!</p>
@@ -255,28 +207,10 @@ export default class IndexPage extends React.Component {
             );
           })}
 
-          <h2>Friends</h2>
-          <br />
-          {friends.map((t) => {
-            return (
-              <div className="member">
-                {t.url ? (
-                  <a href={t.url} target="_blank">
-                    {t.name}
-                  </a>
-                ) : (
-                  t.name
-                )}{' '}
-                {t.title ? <span style={{ color: '#888' }}>◥ {t.title}</span> : ''}
-              </div>
-            );
-          })}
-
           <h2>𓃵 Collaborate</h2>
           <p>
-            Are you interested in collaborating? Jump into any of the project links and take a look
-            at what we are working on and write to us using Github issues. We love experimenting
-            with new technologies.
+            Are you interested in collaborating? Jump into any of the project links and take a look at what we are working on and write to us using Github issues. We love
+            experimenting with new concepts and libraries.
           </p>
 
           <p>© Application Research Group 2020-{getFullYear()}</p>
