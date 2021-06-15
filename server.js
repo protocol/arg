@@ -1,9 +1,9 @@
-import express from "express";
-import next from "next";
-import BodyParser from "body-parser";
-import compression from "compression";
+import express from 'express';
+import next from 'next';
+import BodyParser from 'body-parser';
+import compression from 'compression';
 
-const dev = process.env.NODE_ENV !== "production";
+const dev = process.env.NODE_ENV !== 'production';
 const port = process.env.PORT || 8080;
 const app = next({ dev, quiet: false });
 const nextRequestHandler = app.getRequestHandler();
@@ -15,7 +15,7 @@ app.prepare().then(() => {
     server.use(compression());
   }
 
-  server.use("/public", express.static("public"));
+  server.use('/public', express.static('public'));
   server.use(BodyParser.json());
   server.use(
     BodyParser.urlencoded({
@@ -23,7 +23,7 @@ app.prepare().then(() => {
     })
   );
 
-  server.get("*", async (req, res) => {
+  server.get('*', async (req, res) => {
     return nextRequestHandler(req, res, req.url);
   });
 

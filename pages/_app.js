@@ -1,9 +1,9 @@
-import * as React from "react";
+import * as React from 'react';
 
-import { Global } from "@emotion/react";
+import { Global } from '@emotion/react';
 
-import App from "next/app";
-import injectGlobalStyles from "~/common/styles/global";
+import App from 'next/app';
+import injectGlobalStyles from '~/common/styles/global';
 
 function MyApp({ Component, pageProps }) {
   return (
