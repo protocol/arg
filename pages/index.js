@@ -61,7 +61,12 @@ const STYLES_BODY = css`
   }
 `;
 
-const team = [{ name: 'Jeromy Johnson', title: 'Principal' }, { name: 'Jimmy Lee', url: 'https://reading.supply/@jim' }, { name: 'Chris Waring' }];
+const team = [
+  { name: 'Jeromy Johnson', title: 'Principal' },
+  { name: 'Olizilla', url: 'https://github.com/olizilla' },
+  { name: 'Jimmy Lee', url: 'https://reading.supply/@jim' },
+  { name: 'Chris Waring' },
+];
 
 const projects = [
   {
