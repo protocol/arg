@@ -65,7 +65,7 @@ const team = [
   { name: 'Jeromy Johnson', title: 'Principal' },
   { name: 'Olizilla', url: 'https://github.com/olizilla' },
   { name: 'Jimmy Lee', url: 'https://reading.supply/@jim' },
-  { name: 'Chris Waring' },
+  { name: 'Chris Waring', url: 'https://github.com/cwaring' },
 ];
 
 const projects = [
