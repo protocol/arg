@@ -99,7 +99,7 @@ const projects = [
 export default class IndexPage extends React.Component {
   render() {
     const title = 'ARG';
-    const description = 'Applications Research Group';
+    const description = 'Application Research Group';
     const url = 'https://arg.protocol.ai';
 
     return (
@@ -128,12 +128,12 @@ export default class IndexPage extends React.Component {
         </Head>
         <div css={STYLES_BODY}>
           <h1>꧁𓀨꧂</h1>
-          <p>Applications Research Group</p>
+          <p>Application Research Group</p>
 
           <p>
             <a href="https://protocol.ai">Protocol Labs</a> build protocols, tools, and services to radically improve the Internet. The{' '}
             <a href="https://github.com/application-research/" target="_blank">
-              Applications Research Group
+              Application Research Group
             </a>{' '}
             (ARG) is a team that aims to bolsters the mission by focusing on shipping tools that provide daily utility on the Internet.
           </p>
