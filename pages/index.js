@@ -63,9 +63,10 @@ const STYLES_BODY = css`
 
 const team = [
   { name: 'Jeromy Johnson', title: 'Principal' },
-  { name: 'Olizilla', url: 'https://github.com/olizilla' },
-  { name: 'Jimmy Lee', url: 'https://reading.supply/@jim' },
+  { name: 'Elijah Seed Arita' },
+  { name: 'Oli Evans', url: 'https://github.com/olizilla' },
   { name: 'Chris Waring', url: 'https://github.com/cwaring' },
+  { name: 'Jimmy Lee', url: 'https://reading.supply/@jim' },
 ];
 
 const projects = [
@@ -135,7 +136,7 @@ export default class IndexPage extends React.Component {
             <a href="https://github.com/application-research/" target="_blank">
               Application Research Group
             </a>{' '}
-            (ARG) is a team that aims to bolsters the mission by focusing on shipping tools that provide daily utility on the Internet.
+            (ARG) is a team that aims to bolster the mission by focusing on shipping tools that provide daily utility on the Internet.
           </p>
 
           <p>
