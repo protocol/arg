@@ -63,8 +63,8 @@ const STYLES_BODY = css`
 
 export default class IndexPage extends React.Component {
   render() {
-    const title = 'ARG: Collab Challenge';
-    const description = 'Application Research Group: Collab Challenge';
+    const title = 'ARG: Work On Estuary Challenge';
+    const description = 'Application Research Group: A challenge for those who want to work on Estuary.';
     const url = 'https://arg.protocol.ai/job-challenge-fn';
 
     return (
@@ -94,52 +94,55 @@ export default class IndexPage extends React.Component {
         <div css={STYLES_BODY}>
           <h1>꧁𓀨꧂</h1>
           <p>
-            For creative engineers and computational designers, we put together a simple challenge for a few people who are interested in working with the{' '}
-            <a href="https://arg.protocol.ai">ARG</a> long term.
+            If you are viewing this page, it is because you expressed the interest to work with the <a href="https://arg.protocol.ai">ARG</a> and on Estuary.{' '}
+            <a href="https://estuary.tech">Estuary</a> is our next generation IPFS Node with archival storage and retrieval using Filecoin. We have put together a simple challenge
+            involving it.
           </p>{' '}
           <p>
-            If this website was not sent to you directly and you're passionate about building cool applications for the P2P distributed WWW, We will not stop you from taking a shot
+            If this website was not sent to you directly and you're passionate about building cool applications for the P2P distributed WWW, we will not stop you from taking a shot
             at this. We want to work with people from all backgrounds from anywhere in the world.
           </p>
           <h2>I. Why?</h2>
           <p>We do not believe in white board interviews or brain teasers, we would rather you try something you will actually work on with us.</p>
           <p>
             Working on the Application Research team can be challenging, we try to integrate technology the entire Filecoin ecosystem develops while attempting to innovate on new
-            infrastructure that everyone can upgrade to (e.g. <a href="https://estuary.tech">Estuary</a>). To really have an understanding of whats going on we have to iterate on
+            infrastructure that everyone can upgrade to (e.g. <a href="https://estuary.tech">Estuary</a>). To have an understanding of whats going on we have to iterate on
             prototypes and experiments so that collaborators can learn from us and our OSS.
           </p>
           <p>
             When we built Estuary we started with <a href="https://github.com/application-research/estuary/blob/master/node/node.go">modules</a> developed by many open source
             teams. Our work and success depends on the contributions of many people and we want to honor those contributions by recruiting people who care.
           </p>
-          <h2>II. The challenge</h2>
-          <p>As a team we are ready to share our open source stack for building decentralized web applications (clientside, frontend).</p>
+          <h2>II. The task</h2>
           <p>
-            Clone and setup this starting point <a href="https://github.com/application-research/origin-playground">https://github.com/application-research/origin-playground</a>
-          </p>
-          <p>We want you to take this starting point, and build anything you want with one the following collaborators on this list. You can pick from:</p>
-          <p>
-            ➝ <a href="https://docs.textile.io/buckets/">Textile</a>
+            We would like you to make a successful storage deal on the Filecoin Network using Estuary. Except you will need to run your own Estuary Node, and you will need to run
+            the website client on your own.
           </p>
           <p>
-            ➝ <a href="https://guide.fission.codes/">Fission</a>
+            The first step will be learning how to run an Estuary Node. Please read the <a href="https://github.com/application-research/estuary">README.md on GitHub</a>. Next you
+            will want to prepare your Estuary Node for development, visit this page next:{' '}
+            <a href="https://github.com/application-research/estuary/blob/master/GettingStartedDevelopment.md">
+              https://github.com/application-research/estuary/blob/master/GettingStartedDevelopment.md
+            </a>
+            .
           </p>
           <p>
-            ➝ <a href="https://github.com/ceramicstudio/self.id">3Box/Ceramic</a>
+            Once your Estuary node is running, you'll need to run your own copy of the website and point it to your Estuary node. You can find the instructions{' '}
+            <a href="https://github.com/application-research/estuary-www">here</a>. You will need to change where the{' '}
+            <a href="https://github.com/application-research/estuary-www/blob/master/common/constants.ts#L45">client is pointing</a>.
           </p>
           <p>
-            ➝ <a href="https://github.com/metamask">Metamask</a>
+            Once everything is working, you should store a file from this list{' '}
+            <a href="https://github.com/filecoin-project/slingshot/blob/master/datasets.md">https://github.com/filecoin-project/slingshot/blob/master/datasets.md</a>. You'll have
+            to find storage providers from the <a href="https://file.app">community</a> and provide{' '}
+            <a href="https://estuary.tech/verify-cid?cid=QmVrrF7DTnbqKvWR7P7ihJKp4N5fKmBX29m5CHbW9WLep9">proof</a> that the data is stored.
           </p>
-          <p>
-            ➝ <a href="https://github.com/filecoin-project">Filecoin-project</a>
-          </p>
-          <p>And thats it, try not to take forever on it, but maybe spend 4-6 hours split across anywhere between a day or a few weeks.</p>
-          <p>Good luck.</p>
+          <p>At any moment when you're stuck, feel free to ask questions and reach out, and if you want to stop at any point, that is okay too.</p>
           <h2>III. When you finish</h2>
           <p>
-            When you finish, you know where to find us on{' '}
+            When you finish, find us on{' '}
             <a target="_blank" href="https://filecoin.io/slack">
-              Slack
+              #ARG Slack
             </a>{' '}
             or on twitter at <a href="https://www.twitter.com/aresearchgroup">@aresearchgroup</a>. DM me and we'll schedule time to go over what you did.
           </p>
