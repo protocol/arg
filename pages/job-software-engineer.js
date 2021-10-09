@@ -140,18 +140,14 @@ export default class IndexPage extends React.Component {
             <a href="https://www.twitter.com/wwwjim" target="_blank">
               Jim
             </a>{' '}
-            ➝ <a href="mailto:jl@protocol.ai">jl@protocol.ai</a> or{' '}
-            <a href="https://www.twitter.com/whyrusleeping" target="_blank">
-              Why
-            </a>{' '}
-            ➝ <a href="mailto:y@protocol.ai">y@protocol.ai</a>
+            ➝ <a href="mailto:jl@protocol.ai">jl@protocol.ai</a>.
           </p>
 
           <p>➝ Include a CV, and a link to your GitHub.</p>
 
           <p>
             ➝ Or ignore all of this and dive straight into our code and start making commits and talking to us at{' '}
-            <a href="https://filecoin.io/slack">#ARG or #_fil-lobby in Slack</a>.
+            <a href="https://filecoin.io/slack">#ARG or #fil-lobby in Slack</a> (tag @arg-team).
           </p>
 
           <p>

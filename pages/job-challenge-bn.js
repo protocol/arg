@@ -144,7 +144,7 @@ export default class IndexPage extends React.Component {
             <a target="_blank" href="https://filecoin.io/slack">
               #ARG Slack
             </a>{' '}
-            or on twitter at <a href="https://www.twitter.com/aresearchgroup">@aresearchgroup</a>. DM me and we'll schedule time to go over what you did.
+            and tag @arg-team once you're in... or find us on Twitter at <a href="https://www.twitter.com/aresearchgroup">@aresearchgroup</a>.
           </p>
           <p>
             <a href="/">Return to ARG</a>

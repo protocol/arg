@@ -64,9 +64,9 @@ const STYLES_BODY = css`
 const team = [
   { name: 'Jeromy Johnson', title: 'Principal' },
   { name: 'Elijah Seed Arita' },
-  { name: 'Oli Evans', url: 'https://github.com/olizilla' },
   { name: 'Chris Waring', url: 'https://github.com/cwaring' },
   { name: 'Jimmy Lee', url: 'https://reading.supply/@jim' },
+  { name: 'Various friends in the ecosystem and Protocol Labs' },
 ];
 
 const projects = [
@@ -216,7 +216,7 @@ export default class IndexPage extends React.Component {
           <h2>𓃵 Collaborate</h2>
           <p>
             Are you interested in collaborating? Jump into any of the project links and take a look at what we are working on and write to us using Github issues. We love
-            experimenting with new concepts and libraries.
+            experimenting with new concepts and libraries. We're also hiring people to work on <a href="http://localhost:8080/job-software-engineer">Estuary</a>.
           </p>
 
           <p>© Application Research Group 2020-{getFullYear()}</p>
