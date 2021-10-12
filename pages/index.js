@@ -64,6 +64,7 @@ const STYLES_BODY = css`
 const team = [
   { name: 'Jeromy Johnson', title: 'Principal' },
   { name: 'Elijah Seed Arita' },
+  { name: 'Peter Rabbitson' },
   { name: 'Chris Waring', url: 'https://github.com/cwaring' },
   { name: 'Jimmy Lee', url: 'https://reading.supply/@jim' },
   { name: 'Various friends in the ecosystem and Protocol Labs' },
