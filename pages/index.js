@@ -63,6 +63,7 @@ const STYLES_BODY = css`
 
 const team = [
   { name: 'Jeromy Johnson', title: 'Principal' },
+  { name: 'Brenda Lee', title: 'Lead PM' },
   { name: 'Elijah Seed Arita' },
   { name: 'Peter Rabbitson' },
   { name: 'Chris Waring', url: 'https://github.com/cwaring' },
