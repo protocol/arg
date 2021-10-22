@@ -62,12 +62,13 @@ const STYLES_BODY = css`
 `;
 
 const team = [
-  { name: 'Jeromy Johnson', title: 'Principal' },
+  { name: 'Why', title: 'Principal' },
   { name: 'Brenda Lee', title: 'Lead PM' },
   { name: 'Elijah Seed Arita' },
   { name: 'Peter Rabbitson' },
   { name: 'Chris Waring', url: 'https://github.com/cwaring' },
-  { name: 'Jimmy Lee', url: 'https://reading.supply/@jim' },
+  { name: 'Adrian Lanzafame' },
+  { name: 'Cake', url: 'https://reading.supply/@jim' },
   { name: 'Various friends in the ecosystem and Protocol Labs' },
 ];
 
@@ -178,25 +179,13 @@ export default class IndexPage extends React.Component {
 
           <h2>Projects</h2>
 
-          {projects.map((p) => {
-            return (
-              <div className="item" key={p.name}>
-                <div>➟ {p.name}</div>
-                {p.services.length ? (
-                  <div>
-                    <span style={{ opacity: 0 }}>➟ </span>
-                    {p.services.map((s) => (
-                      <span style={{ color: '#888' }}>➥{s}&nbsp;</span>
-                    ))}
-                  </div>
-                ) : null}
-                <a href={p.url} target="_blank">
-                  <span style={{ opacity: 0 }}>➟ </span>
-                  {p.url}
-                </a>
-              </div>
-            );
-          })}
+          <p>
+            Check out our latest{' '}
+            <a href="/plan-2022Q2" target="_blank">
+              roadmap
+            </a>
+            .
+          </p>
 
           <h2>Team</h2>
           <br />
