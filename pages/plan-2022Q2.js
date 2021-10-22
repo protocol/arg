@@ -52,7 +52,7 @@ const projects = [
     name: 'Estuary Node',
     style: { opacity: 0.3 },
     goals: ['over a petabyte of storage capacity', 'two hundred terabytes a week of deal making capability', 'self hosting instructions', 'education videos'],
-    people: ['Why', 'Brenda Lee', 'Riba', 'Elijah Seed Arita', 'Adrian Lanzafame', 'Cake'],
+    people: ['Why', 'Brenda Lee 🆕', 'Peter Rabbitson 🆕', 'Elijah Seed Arita', 'Adrian Lanzafame', 'Johnny Matthews 🆕', 'Cake'],
     github: 'https://github.com/application-research/estuary',
     website: 'https://estuary.tech',
   },
@@ -61,7 +61,7 @@ const projects = [
     name: 'Barge',
     style: { opacity: 0.3 },
     goals: ['local directory sync', 'git style interface', 'large scale Filecoin storage', 'encryption for Estuary users'],
-    people: ['Why', 'Cake'],
+    people: ['Why', 'Johnny Matthews 🆕', 'Cake'],
   },
   {
     status: 'ongoing',
@@ -81,7 +81,7 @@ const projects = [
     name: 'Estuary WWW — Client',
     style: { opacity: 0.3 },
     goals: ['redesign', 'marketing rebrand', 'customer driven feature work', 'customer onboarding'],
-    people: ['Why', 'Brenda Lee', 'Cake'],
+    people: ['Why', 'Brenda Lee 🆕', 'Cake'],
     github: 'https://github.com/application-research/estuary-www',
     website: 'https://estuary.tech',
   },
@@ -104,7 +104,7 @@ const projects = [
     github: 'https://github.com/application-research/estuary-docs',
     website: 'https://docs.estuary.tech/',
     goals: ['v2', 'multiplayer programmable documentation with first class markdown support'],
-    people: ['Cake'],
+    people: ['Johnny Matthews 🆕', 'Cake'],
   },
   {
     status: 'ongoing',
@@ -123,7 +123,7 @@ const projects = [
       'example: Metamask',
       'various plugins',
     ],
-    people: ['Chris Waring', 'Cake'],
+    people: ['Chris Waring', 'Johnny Matthews 🆕', 'Cake'],
   },
   {
     status: 'ongoing',
@@ -215,9 +215,9 @@ export default class IndexPage extends React.Component {
           <br />
           <p style={{ marginBottom: 128 }}>Interested in helping? Tag the @arg-team in Slack to be listed offically.</p>
 
-          {projects.map((p) => {
+          {projects.map((p, index) => {
             return (
-              <p key={p.id}>
+              <p key={`projects-${index}`}>
                 <span>{p.name}</span>&nbsp;
                 <span style={p.style}>[{p.status}]</span>
                 {p.github ? (

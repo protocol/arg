@@ -63,9 +63,10 @@ const STYLES_BODY = css`
 
 const team = [
   { name: 'Why', title: 'Principal' },
-  { name: 'Brenda Lee', title: 'Lead PM' },
+  { name: 'Brenda Lee 🆕', title: 'Lead PM' },
   { name: 'Elijah Seed Arita' },
-  { name: 'Peter Rabbitson' },
+  { name: 'Peter Rabbitson 🆕' },
+  { name: 'Johnny Matthews 🆕' },
   { name: 'Chris Waring', url: 'https://github.com/cwaring' },
   { name: 'Adrian Lanzafame' },
   { name: 'Cake', url: 'https://reading.supply/@jim' },
