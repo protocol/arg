@@ -70,7 +70,6 @@ const team = [
   { name: 'Chris Waring', url: 'https://github.com/cwaring' },
   { name: 'Adrian Lanzafame' },
   { name: 'Cake', url: 'https://reading.supply/@jim' },
-  { name: 'Various friends in the ecosystem and Protocol Labs' },
 ];
 
 const projects = [

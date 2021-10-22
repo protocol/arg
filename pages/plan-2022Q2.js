@@ -263,7 +263,9 @@ export default class IndexPage extends React.Component {
             experimenting with new concepts and libraries. We're also hiring people to work on <a href="/job-software-engineer">Estuary</a>.
           </p>
 
-          <p>© Application Research Group 2020-{getFullYear()}</p>
+          <p>
+            <a href="/">Return to ARG</a>
+          </p>
         </div>
       </React.Fragment>
     );
