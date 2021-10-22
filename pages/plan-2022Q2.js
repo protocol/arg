@@ -52,7 +52,7 @@ const projects = [
     name: 'Estuary Node',
     style: { opacity: 0.3 },
     goals: ['over a petabyte of storage capacity', 'two hundred terabytes a week of deal making capability', 'self hosting instructions', 'education videos'],
-    people: ['Why', 'Brenda Lee 🆕', 'Peter Rabbitson 🆕', 'Elijah Seed Arita', 'Adrian Lanzafame', 'Johnny Matthews 🆕', 'Cake'],
+    people: ['Why', 'Brenda Lee 🆕', 'Peter Rabbitson 🆕', 'Marshall Culpepper 🆕', 'Elijah Seed Arita', 'Adrian Lanzafame', 'Johnny Matthews 🆕', 'Cake'],
     github: 'https://github.com/application-research/estuary',
     website: 'https://estuary.tech',
   },

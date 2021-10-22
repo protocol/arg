@@ -67,6 +67,7 @@ const team = [
   { name: 'Elijah Seed Arita' },
   { name: 'Peter Rabbitson 🆕' },
   { name: 'Johnny Matthews 🆕' },
+  { name: 'Marshall Culpepper 🆕' },
   { name: 'Chris Waring', url: 'https://github.com/cwaring' },
   { name: 'Adrian Lanzafame' },
   { name: 'Cake', url: 'https://reading.supply/@jim' },
