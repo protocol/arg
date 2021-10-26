@@ -66,6 +66,7 @@ const team = [
   { name: 'Brenda Lee 🆕', title: 'Lead PM' },
   { name: 'Elijah Seed Arita' },
   { name: 'Peter Rabbitson 🆕' },
+  { name: 'Sherif Louis 🆕' },
   { name: 'Johnny Matthews 🆕' },
   { name: 'Marshall Culpepper 🆕' },
   { name: 'Chris Waring', url: 'https://github.com/cwaring' },
