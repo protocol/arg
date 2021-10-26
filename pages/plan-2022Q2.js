@@ -217,7 +217,7 @@ export default class IndexPage extends React.Component {
 
           {projects.map((p, index) => {
             return (
-              <p key={`projects-${index}`}>
+              <p key={p.name}>
                 <span>{p.name}</span>&nbsp;
                 <span style={p.style}>[{p.status}]</span>
                 {p.github ? (
@@ -239,18 +239,18 @@ export default class IndexPage extends React.Component {
                 <br />
                 {p.goals.map((g) => {
                   return (
-                    <React.Fragment>
+                    <div key={`${p.name}-goal-${g}`}>
                       <span>➝ {g}</span>
                       <br />
-                    </React.Fragment>
+                    </div>
                   );
                 })}
                 {p.people.map((w) => {
                   return (
-                    <React.Fragment>
+                    <div key={`${p.name}-goal-${w}`}>
                       <span style={{ opacity: 0.4 }}>{w}</span>
                       <br />
-                    </React.Fragment>
+                    </div>
                   );
                 })}
               </p>

@@ -192,7 +192,7 @@ export default class IndexPage extends React.Component {
           <br />
           {team.map((t) => {
             return (
-              <div className="member">
+              <div className="member" key={t.name}>
                 {t.url ? (
                   <a href={t.url} target="_blank">
                     {t.name}

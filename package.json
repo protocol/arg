@@ -1,6 +1,6 @@
 {
   "name": "arg",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "node": "16.x"
   },
@@ -12,16 +12,16 @@
   "license": "MIT",
   "repository": "protocol/arg",
   "dependencies": {
-    "@babel/core": "^7.14.5",
-    "@babel/preset-env": "^7.14.5",
-    "@babel/register": "^7.14.5",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/register": "^7.15.3",
     "@emotion/babel-preset-css-prop": "11.2.0",
-    "@emotion/react": "11.4.0",
+    "@emotion/react": "11.5.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    "next": "^10.2.3",
+    "next": "^11.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
