@@ -71,7 +71,7 @@ const team = [
   { name: 'Chris Waring' },
   { name: 'Adrian Lanzafame' },
   { name: 'Johnny Matthews' },
-  { name: 'Cake', url: 'https://reading.supply/@jim' },
+  { name: 'Cake', url: 'https://jimmyl.ee' },
 ];
 
 const projects = [
@@ -209,7 +209,7 @@ export default class IndexPage extends React.Component {
           <h2>𓃵 Collaborate</h2>
           <p>
             Are you interested in collaborating? Jump into any of the project links and take a look at what we are working on and write to us using Github issues. We love
-            experimenting with new concepts and libraries. We're also hiring people to work on <a href="/job-software-engineer">Estuary</a>.
+            experimenting with new concepts and libraries.
           </p>
 
           <p>© Application Research Group 2020-{getFullYear()}</p>
