@@ -63,14 +63,14 @@ const STYLES_BODY = css`
 
 const team = [
   { name: 'Why', title: 'Principal' },
-  { name: 'Brenda Lee 🆕', title: 'Lead PM' },
+  { name: 'Sherif Louis', title: 'Lead' },
+  { name: 'Brenda Lee' },
   { name: 'Elijah Seed Arita' },
-  { name: 'Peter Rabbitson 🆕' },
-  { name: 'Sherif Louis 🆕' },
-  { name: 'Johnny Matthews 🆕' },
-  { name: 'Marshall Culpepper 🆕' },
-  { name: 'Chris Waring', url: 'https://github.com/cwaring' },
+  { name: 'Peter Rabbitson' },
+  { name: 'Marshall Culpepper' },
+  { name: 'Chris Waring' },
   { name: 'Adrian Lanzafame' },
+  { name: 'Johnny Matthews' },
   { name: 'Cake', url: 'https://reading.supply/@jim' },
 ];
 
