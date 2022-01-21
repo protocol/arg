@@ -63,14 +63,13 @@ const STYLES_BODY = css`
 
 const team = [
   { name: 'Why', title: 'Principal' },
-  { name: 'Sherif Louis', title: 'Lead' },
-  { name: 'Brenda Lee' },
+  { name: 'Davis Momii' },
+  { name: 'Marshall Culpepper', title: 'Lead' },
   { name: 'Elijah Seed Arita' },
   { name: 'Peter Rabbitson' },
-  { name: 'Marshall Culpepper' },
+  { name: 'Brenda Lee' },
   { name: 'Chris Waring' },
   { name: 'Adrian Lanzafame' },
-  { name: 'Johnny Matthews' },
   { name: 'Cake', url: 'https://jimmyl.ee' },
 ];
 
