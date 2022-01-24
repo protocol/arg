@@ -68,7 +68,6 @@ const team = [
   { name: 'Elijah Seed Arita' },
   { name: 'Peter Rabbitson' },
   { name: 'Brenda Lee' },
-  { name: 'Chris Waring' },
   { name: 'Adrian Lanzafame' },
   { name: 'Cake', url: 'https://jimmyl.ee' },
 ];

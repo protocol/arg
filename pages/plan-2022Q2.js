@@ -52,7 +52,7 @@ const projects = [
     name: 'Estuary Node',
     style: { opacity: 0.3 },
     goals: ['over a petabyte of storage capacity', 'two hundred terabytes a week of deal making capability', 'self hosting instructions', 'education videos'],
-    people: ['Why', 'Brenda Lee 🆕', 'Sherif Louis 🆕', 'Peter Rabbitson 🆕', 'Marshall Culpepper 🆕', 'Elijah Seed Arita', 'Adrian Lanzafame', 'Johnny Matthews 🆕', 'Cake'],
+    people: ['Why', 'Brenda Lee', 'Peter Rabbitson', 'Marshall Culpepper', 'Elijah Seed Arita', 'Adrian Lanzafame', 'Cake'],
     github: 'https://github.com/application-research/estuary',
     website: 'https://estuary.tech',
   },
@@ -61,7 +61,7 @@ const projects = [
     name: 'Barge',
     style: { opacity: 0.3 },
     goals: ['local directory sync', 'git style interface', 'large scale Filecoin storage', 'encryption for Estuary users'],
-    people: ['Why', 'Johnny Matthews 🆕', 'Sherif Louis 🆕', 'Cake'],
+    people: ['Why', 'Cake'],
   },
   {
     status: 'ongoing',
@@ -108,26 +108,6 @@ const projects = [
   },
   {
     status: 'ongoing',
-    name: 'Origin',
-    style: { opacity: 0.3 },
-    github: 'https://github.com/application-research/origin',
-    goals: [
-      'v0.4',
-      'education videos',
-      'p2p distributed web examples for any developer in the world',
-      'example: Textile Bucket',
-      'example: DaemonLand',
-      'example: Ceramic',
-      'example: Fission',
-      'example: Estuary',
-      'example: Metamask',
-      'example: Ledger',
-      'various plugins',
-    ],
-    people: ['Chris Waring', 'Johnny Matthews 🆕', 'Cake'],
-  },
-  {
-    status: 'ongoing',
     style: { opacity: 0.3 },
     name: 'FILC',
     github: 'https://github.com/application-research/filclient',
@@ -164,13 +144,6 @@ const projects = [
     style: { opacity: 0.3 },
     github: 'https://github.com/application-research/next-sass',
     goals: ['v2', 'React based developer examples for the p2p distributed web'],
-    people: ['Cake'],
-  },
-  {
-    status: 'new',
-    name: 'Set',
-    website: 'https://set.world',
-    goals: ['v1', 'game API', 'game engine', 'NFTs'],
     people: ['Cake'],
   },
 ];
@@ -261,7 +234,7 @@ export default class IndexPage extends React.Component {
           <h2 style={{ marginTop: 128 }}>𓃵 Collaborate</h2>
           <p>
             Are you interested in collaborating? Jump into any of the project links and take a look at what we are working on and write to us using Github issues. We love
-            experimenting with new concepts and libraries. We're also hiring people to work on <a href="/job-software-engineer">Estuary</a>.
+            experimenting with new concepts and libraries.
           </p>
 
           <p>
