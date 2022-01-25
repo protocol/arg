@@ -63,6 +63,9 @@ const STYLES_BODY = css`
 
 const team = [
   { name: 'Why', title: 'Principal' },
+  { name: 'Dig' },
+  { name: 'Jonathan Gross' },
+  { name: `Chhi'mèd Künzang` },
   { name: 'Davis Momii' },
   { name: 'Marshall Culpepper', title: 'Lead' },
   { name: 'Elijah Seed Arita' },
