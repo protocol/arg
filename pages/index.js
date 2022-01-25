@@ -69,6 +69,8 @@ const team = [
   { name: 'Peter Rabbitson' },
   { name: 'Brenda Lee' },
   { name: 'Adrian Lanzafame' },
+  { name: 'Eric Evanchick' },
+  { name: 'Johnny Matthews' },
   { name: 'Cake', url: 'https://jimmyl.ee' },
 ];
 
