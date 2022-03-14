@@ -63,20 +63,15 @@ const STYLES_BODY = css`
 
 const team = [
   { name: 'Why', title: 'Principal' },
-  { name: 'Gabriel Cruz' },
-  { name: 'Alvin Reyes' },
-  { name: 'Law' },
+  { name: 'Gabriel Cruz', title: 'Lead' },
+  { name: 'Alvin Reyes', title: 'Lead' },
+  { name: 'Law', title: 'Lead' },
   { name: 'Dig' },
   { name: 'Jonathan Gross' },
   { name: `Chhi'mèd Künzang` },
   { name: 'Davis Momii' },
-  { name: 'Marshall Culpepper', title: 'Lead' },
   { name: 'Elijah Seed Arita' },
-  { name: 'Peter Rabbitson' },
   { name: 'Brenda Lee' },
-  { name: 'Adrian Lanzafame' },
-  { name: 'Eric Evanchick' },
-  { name: 'Johnny Matthews' },
   { name: 'Cake', url: 'https://jimmyl.ee' },
 ];
 
