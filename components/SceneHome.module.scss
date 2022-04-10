@@ -1,0 +1,27 @@
+.body {
+}
+
+.heading {
+  font-family: 'heading';
+  font-weight: 400;
+  line-height: 1.225;
+  font-size: 28px;
+}
+
+.paragraph {
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+  margin-top: 24px;
+
+  a {
+    color: #fff;
+
+    &:visited {
+      color: #fff;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
